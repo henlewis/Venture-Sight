@@ -88,7 +88,7 @@ class RAGService:
 
         try:
             # 1. Generate query embedding
-            query_embedding = self._get_embedding(query)
+            query_embedding = await self._get_embedding(query)
             chunks = []
             
             if query_embedding:
